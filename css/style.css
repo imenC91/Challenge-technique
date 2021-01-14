@@ -1,0 +1,235 @@
+/*--------------------------------
+# Global style 
+--------------------------------*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin:0;
+}
+
+/*--------------------------------
+# Section-banner 
+--------------------------------*/
+.section-banner{
+    background-image: url(../img/container.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 682px;
+}
+.banner-top{
+    padding-top: 40px;
+    font-size: 16px;
+    color:#FFFFFF;
+}
+.section-banner .logo{
+    color:#FFFFFF;
+    font-size: 24px;
+    letter-spacing: -0.48px;
+}
+.section-banner .button-top{
+    float: right;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.32px;
+    padding:15px 30px;
+    color:#172B4D;
+    background-color: #D1D111;
+    border-radius: 5px;
+    opacity: 1;
+    text-decoration: none;
+}
+.section-banner .button-top:hover{
+    text-decoration: none;
+}
+.banner-content{
+    text-align: center;
+}
+.banner-content h1 {
+    margin-top: 63px;
+    font-size: 120px;
+    font-weight:bold;
+    color: #FFFFFF;   
+}
+.banner-content p{
+    font-size: 54px;   
+    line-height: 66px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.section-banner .card{
+    border-radius: 40px;
+}
+.section-banner .form-control-borderless {
+    border: none;
+}
+.section-banner .card-body {
+    padding: 1.1rem 1.5rem;
+}
+.section-banner .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.section-banner .fa-search{
+    color: #b5b5b594;
+}
+.section-banner .fa-search:before {
+    font-size: 22px;
+}
+.section-banner .form-control::placeholder {
+    color: #B5B5B5!important;
+}
+.section-banner .btn-lg{
+    border: 0px solid;
+    border-radius: 40px;
+    background-color: #004518;
+    color: #FFFFFF;
+    padding: 10px 45px;
+}
+.section-banner .btn-lg:hover{
+    background-color:  #D1D111;
+}
+
+/*--------------------------------
+# Section Comment ca marche & Section listes des commerces
+--------------------------------*/
+
+.heading-title{
+    padding-top: 65px;
+    font-size: 32px;
+    text-align: center;
+    color: #172B4D;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.card {  
+    border-radius: 12px;
+}
+
+/*--------------------------------
+# Section Comment ca marche 
+--------------------------------*/
+
+.CardCmt h4{
+    font-size: 18px;
+    color: #172B4D;
+    font-weight: 600;
+}
+.CardCmt p{
+    font-size: 16px;
+    color: #B5B5B5;
+    padding-bottom: 25px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.ImgSvg{
+    padding: 25px 25px;
+}
+.CardCmt{
+    border-color: transparent;
+    box-shadow: 0px 0px 20px 8px rgb(242 242 242 / 0.5);
+   
+}
+.blocCmtMarche{
+    padding: 0px 60px 0px 60px;
+    margin: 0px 60px 0px 60px;
+}
+.blocCmtMarche .card {
+    height: 300px;
+}
+
+/*--------------------------------
+# Section listes des commerces
+--------------------------------*/
+
+.listes-des-commerces .col-md-4{
+    padding: 0px 6px 0px 6px;
+    
+}
+.listes-des-commerces h4{
+    font-size: 18px;
+    font-weight: 500;
+    color: #172B4D;
+    padding-top: 10px;
+}
+.listes-des-commerces p{
+    font-size: 16px;
+    color: #B5B5B5;
+}
+.listes-des-commerces .row{
+    padding-bottom: 20px;
+}
+.listes-des-commerces .card{
+    border-color: transparent;
+}
+.comment-ca-marche{
+    background: linear-gradient(180deg, #FFf 60%, #fafbfc 40%);
+}
+.listes-des-commerces, .listes-des-commerces .card{
+    background-color: #fafbfc;
+}
+a.link-bottom{
+   color: #172B4D;
+   font-size: 16px;
+   text-align: center;
+   padding: 40px 0px 40px 0px;
+   font-weight:500;  
+}
+a.link-bottom:hover{
+   color:#D1D111;
+ }
+
+/*--------------------------------
+# Mobile adjustment 
+--------------------------------*/
+
+/* Medium devices */
+@media screen and (min-width: 768px) and (max-width:1024px){
+    body{
+        font-size: 14px;
+    }
+    .banner-content h1{
+        margin-top: 30px;
+        font-size: 80px;      
+    }
+    .banner-content p{
+        font-size: 40px;   
+    }
+    .blocCmtMarche {
+        padding: 15px 0;
+        margin: 0px 15px;
+    }
+}
+
+/* Small devices */
+@media screen and (max-width: 768px){
+    .section-banner .logo {
+        font-size: 18px
+    }
+    .section-banner .button-top {
+        padding: 7px 10px;
+        font-size: 15px;       
+    }
+    .banner-content h1{
+        margin-top: 30px;
+        font-size: 60px;    
+    }
+    .banner-content p{
+        font-size: 34px;   
+    }
+    .section-banner .btn-lg {
+        padding: 10px 25px;
+        font-size: 16px!important;
+    }
+    .form-control-lg{
+        font-size: 13px;
+    }
+    .blocCmtMarche {
+        padding: 15px 0;
+        margin: 0px 15px;
+    }
+}
+
+  
